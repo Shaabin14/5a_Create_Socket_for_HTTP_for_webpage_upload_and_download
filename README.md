@@ -1,24 +1,27 @@
-# 5a_Create_Socket_for_HTTP_for_webpage_upload_and_download
-## NAME : SHAABIN R S
-## REGISTER NUMBER : 212224230259
+# 5(A). Create Socket for HTTP for webpage upload and download.
+
 ## AIM :
+
 To write a PYTHON program for socket for HTTP for web page upload and download
+
 ## Algorithm
 
-1.Start the program.
-<BR>
-2.Get the frame size from the user
-<BR>
-3.To create the frame based on the user request.
-<BR>
-4.To send frames to server from the client side.
-<BR>
-5.If your frames reach the server it will send ACK signal to client otherwise it will send NACK signal to client.
-<BR>
-6.Stop the program
-<BR>
-## Program 
-```py 
+1. Start the program.
+
+2. Get the frame size from the user
+
+3. To create the frame based on the user request.
+
+4. To send frames to server from the client side.
+
+5. If your frames reach the server it will send ACK signal to client otherwise it will send NACK signal to client.
+
+6. Stop the program
+
+
+## Program:
+
+```PY
 import socket
 
 def send_request(host, port, request):
@@ -46,8 +49,8 @@ def download_file(host, port, filename):
         file.write(file_content.encode())
 
 if __name__ == "__main__":
-    host = '93.184.216.34'
-    port = 80
+    host = '127.0.0.1'
+    port = 8080
 
     # Upload file
     upload_response = upload_file(host, port, 'example.txt')
@@ -59,6 +62,9 @@ if __name__ == "__main__":
 ```
 
 ## OUTPUT
-![alt text](image.png)
+
+<img width="966" height="161" alt="image" src="https://github.com/user-attachments/assets/f59cb661-a665-4e1d-b567-cdcc6f9c0433" />
+
+
 ## Result
 Thus the socket for HTTP for web page upload and download created and Executed
